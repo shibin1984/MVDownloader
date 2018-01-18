@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345844EE2010C095005AAFCF /* MVDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345844ED2010C095005AAFCF /* MVDownloader.swift */; };
+		345844F02010C0AB005AAFCF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345844EF2010C0AB005AAFCF /* APIClient.swift */; };
 		34BF166F20109CD600AA56E7 /* MVDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BF166520109CD600AA56E7 /* MVDownloader.framework */; };
 		34BF167420109CD600AA56E7 /* MVDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF167320109CD600AA56E7 /* MVDownloaderTests.swift */; };
 		34BF167620109CD600AA56E7 /* MVDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 34BF166820109CD600AA56E7 /* MVDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34BF168020109D4E00AA56E7 /* MVDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF167F20109D4E00AA56E7 /* MVDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345844ED2010C095005AAFCF /* MVDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVDownloader.swift; sourceTree = "<group>"; };
+		345844EF2010C0AB005AAFCF /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		34BF166520109CD600AA56E7 /* MVDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BF166820109CD600AA56E7 /* MVDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDownloader.h; sourceTree = "<group>"; };
 		34BF166920109CD600AA56E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34BF166E20109CD600AA56E7 /* MVDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BF167320109CD600AA56E7 /* MVDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDownloaderTests.swift; sourceTree = "<group>"; };
 		34BF167520109CD600AA56E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34BF167F20109D4E00AA56E7 /* MVDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345844EC2010C095005AAFCF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				345844ED2010C095005AAFCF /* MVDownloader.swift */,
+				345844EF2010C0AB005AAFCF /* APIClient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		34BF165B20109CD500AA56E7 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +84,9 @@
 		34BF166720109CD600AA56E7 /* MVDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				345844EC2010C095005AAFCF /* Classes */,
 				34BF166820109CD600AA56E7 /* MVDownloader.h */,
 				34BF166920109CD600AA56E7 /* Info.plist */,
-				34BF167F20109D4E00AA56E7 /* MVDownloader.swift */,
 			);
 			path = MVDownloader;
 			sourceTree = "<group>";
@@ -200,7 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34BF168020109D4E00AA56E7 /* MVDownloader.swift in Sources */,
+				345844EE2010C095005AAFCF /* MVDownloader.swift in Sources */,
+				345844F02010C0AB005AAFCF /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
