@@ -9,14 +9,14 @@
 import UIKit
 import Foundation
 
-public class MVDownloader {
+open class MVDownloader {
     
     public init() {
     }
 
-    public func loadImageFromURL(url : URL, completionHandler:@escaping (UIImage, Error?) -> Swift.Void) {
+    open func loadImageFromURL(_ url : URL, completionHandler:@escaping (UIImage, Error?) -> Swift.Void) {
         
-        APIClient.sharedInstance().loadConentFromURL(url: url) { (responseData, err) in
+        APIClient.sharedInstance().loadConentFromURL(url) { (responseData, err) in
             guard let image = UIImage.init(data: responseData) else {
                 return
             }
@@ -25,13 +25,10 @@ public class MVDownloader {
         }
     }
     
-    public func loadJSONFromURL(url : URL, completionHandler:@escaping (String, Error?) -> Swift.Void) {
-        APIClient.sharedInstance().loadConentFromURL(url: url) { (responseData, err) in
-            guard let jsonString = String.init(data: responseData, encoding: .utf8) else {
-                return
-            }
-            
-            completionHandler(jsonString, nil)
+    open func loadJSONFromURL(_ url : URL, completionHandler:@escaping (Data?, Error?) -> Swift.Void) {
+        
+        APIClient.sharedInstance().loadConentFromURL(url) { (responseData, err) in
+            completionHandler(responseData, nil)
         }
     }
 }

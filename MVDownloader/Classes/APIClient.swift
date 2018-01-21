@@ -11,14 +11,14 @@ import Foundation
 
 class APIClient: NSObject {
     
-    private static let _sharedInstance = APIClient()
+    fileprivate static let _sharedInstance = APIClient()
     let localCache = NSCache<AnyObject, AnyObject>()
     
     class func sharedInstance() -> APIClient {
         return _sharedInstance
     }
     
-    func loadConentFromURL(url : URL, completionHandler:@escaping (Data, Error?) -> Swift.Void) {
+    func loadConentFromURL(_ url : URL, completionHandler:@escaping (Data, Error?) -> Swift.Void) {
         
         if let cachedResponse = localCache.object(forKey: url as AnyObject) {
             print("===== Content Loaded from Cache =====")
